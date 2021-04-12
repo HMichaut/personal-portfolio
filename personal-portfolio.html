@@ -1,0 +1,87 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main>
+  <style>
+    #welcome-section {
+    width: 100vw;
+    height: 100vh;
+    }
+    #projects {
+    width: 100vw;
+    height: 100vh;
+    }
+    #profile {
+    width: 100vw;
+    height: 100vh;
+    }
+    
+    #navbar {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      display: flex;
+      flex-direction: row;
+      background-color: #333;
+      width: 100%;
+      font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    }
+    @media screen and (max-width: 500px) {
+    #navbar { visibility: hidden; }
+    }
+    #navlist {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    .nav-list {
+      float: left;
+    }
+    .nav-list a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .nav-list a:hover {
+      background-color: #111;
+    }
+    #welcome-section {
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      background-image: linear-gradient(45deg, #ffffff 44.44%, #336699 44.44%, #336699 50%, #ffffff 50%, #ffffff 94.44%, #336699 94.44%, #336699 100%);
+background-size: 45.00px 45.00px;
+    }
+    h1 {
+      background: #ffffff;
+      border-color: #336699;
+      border-style: double;
+      padding: 1em;
+    }
+  </style>
+  
+  <nav id="navbar">
+    <ul id="navlist">
+        <li class="nav-list"><a class="nav-link" href="#welcome-section">Welcome section</a></li>
+        <li class="nav-list"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-list"><a class="nav-link" href="#profile">Profile</a></li>
+    </ul>
+  </nav>
+  
+  <section id="welcome-section">
+    <h1>Welcome to HMichaut portfolio</h1>
+  </section>
+  
+  <section id="projects">
+    <h2 class="project-tile">Projects</h2>
+    <a id="tribute-link" target="_blank" href="https://codepen.io/hmichaut/pen/qBRpLGN">Tribute link</a>
+  </section>
+  
+  <section id="profile">
+    <h2 class="profile-tile">Profile</h2>
+    <a id="profile-link" target="_blank" href=h"ttps://github.com/HMichaut">Click here</a>
+  </section>
+</main>
