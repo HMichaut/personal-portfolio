@@ -14,6 +14,9 @@
     width: 100vw;
     height: 100vh;
     }
+    section {
+      font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    }
     
     #navbar {
       position: fixed;
@@ -61,6 +64,22 @@ background-size: 45.00px 45.00px;
       border-style: double;
       padding: 1em;
     }
+    #github {
+      width: 5%;
+      height: auto;
+    }
+    .project-img {
+      height: 400px;
+      padding: 1em;
+      width: auto;
+      border-color: black;
+      border-style: solid;
+    }
+    #img-bar {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+    }
   </style>
   
   <nav id="navbar">
@@ -77,11 +96,20 @@ background-size: 45.00px 45.00px;
   
   <section id="projects">
     <h2 class="project-tile">Projects</h2>
-    <a id="tribute-link" target="_blank" href="https://codepen.io/hmichaut/pen/qBRpLGN">Tribute link</a>
+    
+    <div id="img-bar">
+    <a id="tribute-link" target="_blank" href="https://codepen.io/hmichaut/pen/qBRpLGN"><img src="https://github.com/HMichaut/personal-portfolio/blob/main/tribute-page.png?raw=true" class="project-img" id="tribute-img"></a>
+    <a id="tribute-link" target="_blank" href="https://codepen.io/hmichaut/pen/RwKQNVR"><img src="https://github.com/HMichaut/personal-portfolio/blob/main/survey-form.png?raw=true" class="project-img" id="survey-form-img"></a>
+    <a id="tribute-link" target="_blank" href="https://codepen.io/hmichaut/pen/wvgyGzE"><img src="https://github.com/HMichaut/personal-portfolio/blob/main/product-landing-page.png?raw=true" class="project-img" id="product-img"></a>
+    <a id="tribute-link" target="_blank" href="https://codepen.io/hmichaut/pen/poRaRrR"><img src="https://github.com/HMichaut/personal-portfolio/blob/main/technical-documentation.png?raw=true" class="project-img" id="tech-doc-img"></a>
+      <div>
+        
   </section>
   
   <section id="profile">
     <h2 class="profile-tile">Profile</h2>
-    <a id="profile-link" target="_blank" href=h"ttps://github.com/HMichaut">Click here</a>
+    <p> You can chek out my Github:</p>
+    <a id="profile-link" target="_blank" href="https://github.com/HMichaut">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" id="github"></a>
   </section>
 </main>
